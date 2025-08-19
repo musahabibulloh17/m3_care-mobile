@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State ketika tombol ditekan -->
+    <item android:state_pressed="true" android:color="#D32F2F" />
+
+    <!-- State ketika tombol difokuskan -->
+    <item android:state_focused="true" android:color="#FF5252" />
+
+    <!-- State default -->
+    <item android:color="#FF0000" />
+
+</selector>

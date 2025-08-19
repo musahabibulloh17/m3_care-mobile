@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Warna saat dalam status default -->
+    <item android:color="#A8E6CF" android:state_enabled="true" />
+
+    <!-- Warna saat tidak aktif (disabled) -->
+    <item android:color="#DCEDC1" android:state_enabled="false" />
+
+</selector>

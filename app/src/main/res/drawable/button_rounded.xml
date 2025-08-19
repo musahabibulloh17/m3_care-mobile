@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the button is pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#388E3C" /> <!-- Hijau lebih gelap -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape>
+            <solid android:color="#4CAF50" /> <!-- Hijau normal -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>

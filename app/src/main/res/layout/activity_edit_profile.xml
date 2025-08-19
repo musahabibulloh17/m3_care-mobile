@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient_green"
+    android:padding="16dp">
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clipToOutline="true"
+            android:outlineProvider="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/huhhihi" />
+
+        <!-- Camera Icon -->
+    </LinearLayout>
+
+    <!-- Profile Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <!-- Nama Lengkap -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nama lengkap"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <!-- NIS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_card"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etNIS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan NIS"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan email"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Telepon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nomor telepon"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <!-- Kelas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_class"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan kelas"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Tanggal Lahir -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_calendar"
+                android:background="@drawable/circle_background_secondary"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan tanggal lahir (dd-mm-yyyy)"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <!-- Button Save -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/green_button"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

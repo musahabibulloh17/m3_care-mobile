@@ -1,0 +1,12 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Nonaktifkan tint untuk ikon di BottomNavigationView -->
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
+    </style>
+
+    <style name="BottomNavStyle">
+        <item name="itemIconTint">@null</item>
+        <item name="itemTextColor">@null</item>
+    </style>
+</resources>

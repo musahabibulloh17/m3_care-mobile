@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E0E0E0" /> <!-- Ubah warna sesuai kebutuhan -->
+    <size
+        android:width="50dp"
+        android:height="50dp" />
+    <corners android:radius="25dp" /> <!-- Membuat bentuk bulat sempurna -->
+</shape>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient_green"> <!-- Apply Gradient Background -->
+
+    <!-- Bagian Toolbar dengan Icon Kembali dan Judul -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back" /> <!-- Gantilah dengan ikon kembali yang sesuai -->
+
+    </LinearLayout>
+
+    <!-- Bagian Tanggal -->
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="5 Januari"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengingat Hari ini"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#333333" />
+
+    <!-- Grid Hari dengan Hari-Hari Bulat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:paddingVertical="16dp">
+
+        <!-- Senin -->
+        <TextView
+            android:id="@+id/textMonday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Sen"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:background="@drawable/bg_circle_unselected"
+            android:padding="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Selasa -->
+        <TextView
+            android:id="@+id/textTuesday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Sel"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:background="@drawable/bg_circle_unselected"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Rabu -->
+        <TextView
+            android:id="@+id/textWednesday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_unselected"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Rab"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <!-- Kamis -->
+        <TextView
+            android:id="@+id/textThursday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Kam"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:background="@drawable/bg_circle_unselected"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Jumat (Yang Terpilih) -->
+        <TextView
+            android:id="@+id/textFriday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_unselected"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Jum"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Sabtu -->
+        <TextView
+            android:id="@+id/textSaturday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Sab"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:background="@drawable/bg_circle_unselected"
+            android:padding="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Minggu -->
+        <TextView
+            android:id="@+id/textSunday"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Min"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:background="@drawable/bg_circle_unselected"
+            android:padding="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <!-- Garis Pembatas -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- Daftar Notifikasi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="judul_text_view" type="id" />
+    <item name="gambar_image_view" type="id" />
+    <item name="webview" type="id" />
+    <item name="poster_recycler_view" type="id" />
+    <item name="video_recycler_view" type="id" />
+    <item name="textViewNotificationStatus" type="id" />
+</resources>

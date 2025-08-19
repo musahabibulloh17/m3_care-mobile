@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fr_home"
+        android:icon="@drawable/logoijo4"
+        android:title="Home" />
+    <item
+        android:id="@+id/fr_healthrecord"
+        android:icon="@drawable/logoijo1"
+        android:title="Edukasi Kesehatan" />
+    <item
+        android:id="@+id/fr_reminder"
+        android:icon="@drawable/logoijo2"
+        android:title="Reminder" />
+    <item
+        android:id="@+id/fr_profil"
+        android:icon="@drawable/logoijo3"
+        android:title="Profil" />
+</menu>

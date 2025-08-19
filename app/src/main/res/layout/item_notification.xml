@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#F5F5F5
+">
+
+    <!-- Timeline Vertikal -->
+    <View
+        android:id="@+id/timeline"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:background="#4CAF50" />
+
+    <!-- Lingkaran Penanda Waktu -->
+    <View
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="8dp"
+        android:background="#4CAF50"
+        android:elevation="2dp"
+        android:shape="oval" />
+
+    <!-- Jam -->
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/timeline"
+        android:gravity="center_vertical"
+        android:text="07:00"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Kartu Pengingat -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:background="#E8F5E9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paracetamol 50 Mg\nAmoxicillin 100 Mg\nNeurobion 100 Mg"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <!-- Menampilkan waktu notifikasi -->
+            <LinearLayout
+                android:id="@+id/textViewTimeIntervalsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+                <!-- List waktu akan ditambahkan disini -->
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

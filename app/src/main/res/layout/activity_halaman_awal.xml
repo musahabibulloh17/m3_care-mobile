@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uksapp"
+    android:gravity="center"
+    tools:context=".HalamanAwal">
+
+    <!-- Logo Section -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ukslogo"
+        android:contentDescription="Logo" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="M3 CARE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Digitalisasi Unit Kesehatan Sekolah\nSMA Muhammadiyah 3 Jember"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

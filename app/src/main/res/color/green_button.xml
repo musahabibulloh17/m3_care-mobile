@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Status Ditekan -->
+    <item android:color="#388E3C" android:state_pressed="true" />
+
+    <!-- Status Nonaktif -->
+    <item android:color="#A5D6A7" android:state_enabled="false" />
+
+    <!-- Status Default -->
+    <item android:color="#4CAF50" />
+
+</selector>
